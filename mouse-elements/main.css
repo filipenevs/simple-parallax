@@ -1,0 +1,84 @@
+/* RESET SOME CSS STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+/* STYLING PARALLAX SECTION */
+.parallax-layer {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ededed;
+  margin-bottom: 50px;
+}
+
+.parallax-layer:nth-child(2) {
+  filter: hue-rotate(180deg);
+}
+
+.parallax-layer:nth-child(3) {
+  filter: hue-rotate(270deg);
+}
+
+/* STYLING PARALLAX TEXT */
+.parallax-layer > span {
+  font-size: 7rem;
+  font-weight: bold;
+  color: rgb(255, 0, 0);
+}
+
+/* STYLING PARALLAX ELEMENTS */
+.parallax-layer > div {
+  position: absolute;
+  background-color: rgb(255, 181, 181);
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+}
+
+/* PLACING ITEMS RANDOMLY */
+.parallax-layer > div:nth-child(1) {
+  top: 10%;
+  left: 20%;
+}
+
+.parallax-layer > div:nth-child(2) {
+  top: 80%;
+  left: 63%;
+}
+
+.parallax-layer > div:nth-child(3) {
+  top: 35%;
+  left: 8%;
+}
+
+.parallax-layer > div:nth-child(4) {
+  top: 40%;
+  left: 50%;
+}
+
+.parallax-layer > div:nth-child(5) {
+  top: 69%;
+  left: 27%;
+}
+
+.parallax-layer > div:nth-child(6) {
+  top: 58%;
+  left: 53%;
+}
+
+.parallax-layer > div:nth-child(7) {
+  top: 19%;
+  left: 80%;
+}
+
+.parallax-layer > div:nth-child(8) {
+  top: 59%;
+  left: 78%;
+}

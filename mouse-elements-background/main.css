@@ -1,0 +1,31 @@
+/* RESET SOME CSS STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.parallax-layer {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(imgs/bg.jpg) repeat center/120%;
+  overflow: hidden;
+}
+
+.parallax-layer > span {
+  font-size: 8rem;
+  font-weight: bold;
+  color: #fff;
+  margin-top: -125px;
+}
+
+.parallax-layer > img {
+  position: absolute;
+  width: 115%;
+  object-fit: cover;
+}
