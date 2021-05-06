@@ -21,11 +21,15 @@
   font-size: 8rem;
   font-weight: bold;
   color: #fff;
-  margin-top: -125px;
+  margin-top: -300px;
 }
 
 .parallax-layer > img {
   position: absolute;
   width: 115%;
   object-fit: cover;
+}
+
+.bottom {
+  bottom: -50px;
 }

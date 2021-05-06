@@ -15,7 +15,6 @@ const parallax = function (event) {
 };
 
 // ADDING LISTENER IN ALL PARALLAX DIVS
-
 document.querySelectorAll('.parallax-layer').forEach((element) => {
   element.addEventListener('mousemove', parallax);
 });
