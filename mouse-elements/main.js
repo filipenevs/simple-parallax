@@ -1,13 +1,16 @@
 const parallax = function (event) {
+  // GETTING MID SCREEN
+  const midX = window.innerWidth / 2;
+  const midY = window.innerHeight / 2;
   // FOR EACH IN PARALLAX ELEMENTS (everything in parallax div that contains the "data-res" attribute)
   this.querySelectorAll('*[data-res]').forEach((item) => {
     // TAKING THE RESISTANCE/SPEED AND DIRECTION THAT THE ELEMENT WILL DO
     const res = item.dataset.res;
     // CALCULATING NEW COORDINATES
-    const newX = (window.innerWidth - event.clientX * res) / 100;
-    const newY = (window.innerWidth - event.clientY * res) / 100;
+    const newX = ((event.clientX - midX) * res) / 200;
+    const newY = ((event.clientY - midY) * res) / 200;
     // MOVING ITEM IN SCREEN
-    item.style.transform = `translate3d(${newX}px, ${newY}px, 0)`;
+    item.style.transform = `translate(${newX}px, ${newY}px)`;
   });
 };
 

@@ -13,7 +13,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(imgs/bg.jpg) repeat center/120%;
+  background: url(imgs/bg.jpg) repeat center;
+  background-size: 120%;
   overflow: hidden;
 }
 
@@ -21,7 +22,7 @@
   font-size: 8rem;
   font-weight: bold;
   color: #fff;
-  margin-top: -300px;
+  margin-top: -250px;
 }
 
 .parallax-layer > img {
